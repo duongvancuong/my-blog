@@ -9,59 +9,59 @@
 /sw.js
   Cache-Control: no-cache
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-93e968e729fa3c90b6f7.js>; rel=preload; as=script
 /404
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /tags
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /categories
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
-  Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
-/pages/about/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /posts/desgin-pattern-reactjs/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
-  Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
-/pages/contacts/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
-  Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
-/posts/call-apply-bind-in-javascript/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /posts/currying-in-javascript/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
+  Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
+/posts/call-apply-bind-in-javascript/
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /posts/how-and-when-use-react-context-api/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /posts/react-pattern-part-two/
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
+  Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
+/pages/about/
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
+  Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
+/pages/contacts/
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /tag/javascript
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /tag/javascript/page/1
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /tag/pattern
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /tag/react-js
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /category/javascript
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /category/react-js
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
 /page/1
-  Link: </webpack-runtime-edd2aa6c15bdd270a6c5.js>; rel=preload; as=script
+  Link: </webpack-runtime-0f7a6a508ae6e2c7d5a3.js>; rel=preload; as=script
   Link: </0-5495c36a5388a40a52e9.js>; rel=preload; as=script
