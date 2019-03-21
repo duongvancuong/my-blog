@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://tek-fun.netlify.com',
   title: 'Blog by Tek Fun',
-  subtitle: 'I am a web developer. I love Javascript, ReactJS. I do with passion, curiosity, share what I know.',
+  subtitle: 'I am a web developer. I love Javascript, ReactJS. With passion, curiosity, I learn for food, work for fun and share for the future. ',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -25,7 +25,7 @@ module.exports = {
   author: {
     name: 'Tek Fun',
     photo: '/photo.jpg',
-    bio: 'I am a web developer. I love Javascript, ReactJS. I do with passion, curiosity, share what I know.',
+    bio: 'I am a web developer. I love Javascript, ReactJS. With passion, curiosity, I learn for food, work for fun and share for the future. ',
     contacts: {
       email: 'vancuong279dn@gmail.com',
       telegram: '#',
