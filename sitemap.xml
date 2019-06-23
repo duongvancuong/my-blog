@@ -4,17 +4,22 @@
 <url> <loc>https://tek-fun.netlify.com/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/posts/desgin-pattern-reactjs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/posts/currying-in-javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://tek-fun.netlify.com/posts/call-apply-bind-in-javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/posts/how-and-when-use-react-context-api/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://tek-fun.netlify.com/posts/react-pattern-part-two/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/posts/call-apply-bind-in-javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/posts/react-pattern-part-two/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/posts/how-about-useEffect/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/posts/how-are-function-component-different-from-classes/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/tag/hooks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/tag/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/tag/javascript/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/tag/pattern</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/tag/react-js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/tag/react-js/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/category/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/category/react-js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://tek-fun.netlify.com/category/react-js/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://tek-fun.netlify.com/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
