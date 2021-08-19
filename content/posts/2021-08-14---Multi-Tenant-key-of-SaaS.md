@@ -11,12 +11,12 @@ description: "Khi thực hiện phát triển 1 dự án multi-tenant SaaS thì 
 ---
 
 ## Single Tenant:
-- Single Tenant là 1 instance ứng dụng và hỗ trợ infrastructure cho một khách hàng. Khách hàng có một phiên bản ứng và database độc lập và không có 1 sự chia sẽ nào ở đây. 
+- Single Tenant là 1 instance application và hỗ trợ infrastructure cho một khách hàng. Khách hàng có một phiên bản ứng dụng và database độc lập và không có 1 sự chia sẽ nào ở đây. 
 
 
 ## Multi-Tenant:
-- Có nghĩa là 1 instance ứng dụng và các cơ sở hạn tầng của nó phục vụ cho nhiều khách hàng. Mỗi khách hàng chia sẽ ứng dụng. Dữ liệu của mỗi tenant được tách biệt vào không thể nhìn thấy bởi tenant khác. Người dùng sẽ cảm thấy rằng họ là người duy nhất sử dụng ứng dụng. Mỗi người dùng sẽ có dữ liệu riêng của họ và chỉ họ mới có thể  nhìn thấy và sử đổi nó.
-- Với việc triển khai như vậy nhà cung câp service (owner SaaS) sẽ tiết kiện được chi phí triển khai ứng dụng và cơ sở hạ tầng cho nhiều tenant sử dụng.
+- Có nghĩa là 1 instance application và các cơ sở hạn tầng của nó phục vụ cho nhiều khách hàng. Mỗi khách hàng chia sẽ ứng dụng. Dữ liệu của mỗi tenant được tách biệt vào không thể nhìn thấy bởi tenant khác. Người dùng sẽ cảm thấy rằng họ là người duy nhất sử dụng ứng dụng. Mỗi người dùng sẽ có dữ liệu riêng của họ và chỉ họ mới có thể  nhìn thấy và sửa đổi nó.
+- Với việc triển khai như vậy nhà cung cấp service (owner SaaS) sẽ tiết kiệm được chi phí triển khai ứng dụng và cơ sở hạ tầng cho nhiều tenant sử dụng.
 
 ## Các vấn đề  về  Database khi triển khai Multi-Tenant:
 
@@ -28,25 +28,25 @@ description: "Khi thực hiện phát triển 1 dự án multi-tenant SaaS thì 
 
 ## #1 Security:
 
-- Bảo mật dữ liệu rất quan trọng trong tất cả các hệ thống, những  trong hệ thống nhiều tenant thì sẽ có thêm 1 khía cạnh khác đó là dữ liệu ở đây sẽ chứa của nhiều tenant thay vì chỉ 1 tenant như trong hệ thống dành cho 1 tenant riêng lẻ.
-- Nếu cung cấp phần mềm cho nhiều tenant thì yêu cầu cơ bản là 1 tenant này sẽ không thể xem hoặc tương tác tới data của 1 tenant khác. Nếu có phá vỡ điều đó thì chắc chắn hệ thông này đã vi phạm tiêu chuẩn về bảo mất.
+- Bảo mật dữ liệu rất quan trọng trong tất cả các hệ thống, nhưng trong hệ thống nhiều tenant thì sẽ có thêm 1 khía cạnh khác đó là dữ liệu ở đây sẽ chứa của nhiều tenant thay vì chỉ 1 tenant như trong hệ thống dành cho 1 tenant riêng lẻ.
+- Nếu cung cấp phần mềm cho nhiều tenant thì yêu cầu cơ bản là 1 tenant này sẽ không thể xem hoặc tương tác tới data của 1 tenant khác. Nếu có phá vỡ điều đó thì chắc chắn hệ thống này đã vi phạm tiêu chuẩn về bảo mật.
 
 
 ## #2 Maintainability:
 
-- Đối với single-tenant system. Chúng ta có thể có plan để  thực hiện backup dữ liệu. Chúng ta có thể thực hiện các jobs hằng đêm để thực hiện các tác vụ maintenance như rebuid index, reorganization, kiểm tra tính toàn vẹn của dữ liệu, để giữ cho hệ thống hoạt động cách tốt nhất. Nhưng đối với hệ thống multi-tenant thì câu hỏi đặt ra ở đây là: "Công việc bảo trì sẽ như thế nào nhiều số lượng tenant tăng lên quá nhanh?" từ 1 tenant chúng ta có sẽ có đến hàng trăn hoặc hằng ngàn tenant trong tương lai. vậy nên quá trình bảo trì sẽ trở nên khó khăn hơn và tốn thời gian hơn.
+- Đối với single-tenant system. Chúng ta có thể có plan để  thực hiện backup dữ liệu. Chúng ta có thể thực hiện các jobs hằng đêm để thực hiện các tác vụ maintenance như rebuid index, reorganization, kiểm tra tính toàn vẹn của dữ liệu, để giữ cho hệ thống hoạt động cách tốt nhất. Nhưng đối với hệ thống multi-tenant thì câu hỏi đặt ra ở đây là: "Công việc bảo trì sẽ như thế nào khi số lượng tenant tăng lên quá nhanh?" từ 1 tenant chúng ta có sẽ có đến hàng trăn hoặc hằng ngàn tenant trong tương lai. Vậy nên quá trình bảo trì sẽ trở nên khó khăn hơn và tốn thời gian hơn.
 
 ## #3 Scalability:
 
-- Đối với single-tenant system, có thể chúng ta sẽ tự hỏi: "Khi khối lượng dự liệu tăng lên, làm thế nào để duy trì 1 hiệu suất ổn định?"
-- Đối với multi-tenant system thì cầu hỏi ở đây sẽ là: "Khi add nhiều tenant và dữ liệu của mỗi tenant tăng lên thì làm thể nào để duy trì hiệu suất ổn định?"
+- Đối với single-tenant system, có thể chúng ta sẽ tự hỏi: "Khi khối lượng dữ liệu tăng lên, làm thế nào để duy trì 1 hiệu suất ổn định?"
+- Đối với multi-tenant system thì câu hỏi ở đây sẽ là: "Khi add nhiều tenant và dữ liệu của mỗi tenant tăng lên thì làm thế nào để duy trì hiệu suất ổn định?"
 
-Điểm khác nhau ở đây là 1 tenant với 10 triệu bản ghi và 1000 tenant với 10 triệu bản ghi cho mỗi tenant. Là người cung cấp service chúng ta sẽ luôn muốn có càng nhiều tenant thì cang tốt vào con số đó sẽ luôn là ẩn số. Và để  đảm bảo ứng dụng luôn hoạt động với hiệu suất tốt là 1 bài toàn khó.
+Điểm khác nhau ở đây là 1 tenant với 10 triệu bản ghi và 1000 tenant với 10 triệu bản ghi cho mỗi tenant. Là người cung cấp service chúng ta sẽ luôn muốn có càng nhiều tenant thì càng tốt vào con số đó sẽ luôn là ẩn số. Và để  đảm bảo ứng dụng luôn hoạt động với hiệu suất tốt là 1 bài toán khó.
  
 
 ## Phương pháp tiếp cận và thiết kế  Database:
 
-Theo tìm hiểu và nghiên cứu thì ở đâu tôi sẽ chỉ ra 4 cách tiếp cận:
+Theo tìm hiểu và nghiên cứu thì ở đây tôi sẽ chỉ ra 4 cách tiếp cận:
 1. Single database, shared schema.
 2. Single database, separate schema.
 3. Database per tenant.
@@ -55,7 +55,7 @@ Theo tìm hiểu và nghiên cứu thì ở đâu tôi sẽ chỉ ra 4 cách ti�
 ## Phương pháp #1: Single database, shared schema:
 - Một database để lưu trữ cho toàn bộ tất cả tenant.
 - Dữ liệu của mỗi tenant được lưu trữ trên cùng 1 table như nhau.
-- Các table chứa dữ liệu dành cho từng tenant sẽ gồm 1 column để các định nó thuộc về tenant nào. (tenant_id)
+- Các table chứa dữ liệu dành cho từng tenant sẽ gồm 1 column để các xác định nó thuộc về tenant nào. (tenant_id)
 
 Với cách này thì sẽ như thế nào với 3 vấn đề trên.
 
@@ -65,17 +65,17 @@ Với cách này thì sẽ như thế nào với 3 vấn đề trên.
 - [❌ ] Không tách biệt data cho mỗi tenant.
 
 ### Maintainability:
-- [✔️] Việc chỉ có 1 database schema to maintain sẽ đơn giản hơn. và chỉ cần áp dụng 1 lần.
-- [✔️] Việc quản lý High Availability/Disaster Recovery/ maintainance operation/motioring sẽ chỉ dành cho 1 database.
-- [✔️] Việc thực hiện coding sẽ ít phưc tạp hơn khi chỉ có 1 schema, 1 database để connect.
+- [✔️] Việc chỉ có 1 database schema to maintain sẽ đơn giản hơn và chỉ cần áp dụng 1 lần.
+- [✔️] Việc quản lý High Availability/Disaster Recovery/ maintainance operation/monitoring sẽ chỉ dành cho 1 database.
+- [✔️] Việc thực hiện coding sẽ ít phức tạp hơn khi chỉ có 1 schema, 1 database để connect.
 - [✔️] Việc thêm 1 tenant mới vào database sẽ đơn giản hơn.
 - [❌ ] Mọi câu query hoặc modification data đều phải định nghĩa một tenant_id
 - [❌ ] Phải thực hiện RLS policy lên những table mới.
 - [❌ ] Không thể đơn giản để có thể restore 1 single tenant.
 
 ### Scalability:
-- [❌ ] Rủi ro về hiệu suất. vì phải chia sẽ cùng tài nguyên với những tenant khác.
-- [❌ ] Số lượng tenant tăng lên và lượng dữ liệu của mỗi tenant cũng tăng lên. ảnh hưởng tới việc maintanance cũng trở lên khó khăn hơn.
+- [❌ ] Rủi ro về hiệu suất. Vì phải chia sẻ cùng tài nguyên với những tenant khác.
+- [❌ ] Số lượng tenant tăng lên và lượng dữ liệu của mỗi tenant cũng tăng lên ảnh hưởng tới việc maintanance cũng trở nên khó khăn hơn.
 
 ## Phương pháp #2: Single Database, Separate Schema.
 - Một database để lưu trữ cho toàn bộ tất cả tenant.
